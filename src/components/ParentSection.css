@@ -1,0 +1,90 @@
+.home {
+    height: 97vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.background-town {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: auto;
+}
+
+.home-text {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    max-width: 50rem;
+}
+
+.home-h4 {
+    color: #010103;
+    font-family: Rubik,sans-serif;
+    font-size: 2.2rem;
+}
+
+.home-h1 {
+    color: #010103;
+    font-family: Poppins,sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2.3rem;
+    margin-top: 1rem;
+}
+
+.home-h1 span {
+    color: #ff4d30;
+    font-family: Poppins,sans-serif;
+    font-size: 5.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 2.3rem;
+    margin-top: 1rem;
+}
+
+.home-p {
+    color: #706f7b;
+    font-family: Rubik,sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 4rem;
+}
+
+.background-car {
+    width: 100%;
+    z-index: 5;
+}
+
+.home-buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+.book-ride {
+    font-weight: 700;
+    gap: 9px;
+    border: 2px solid #ff4d30;
+    padding: 1.8rem 3rem;
+}
+
+.learn-more { 
+    font-weight: 700;
+    gap: 9px;
+    padding: 1.8rem 3rem;
+    background-color: black;
+    color: white;
+    box-shadow: none;
+    border: 2px solid black;
+}
+
+.learn-more:hover {
+    background-color: white;
+    color: black;
+    box-shadow: none;
+}
