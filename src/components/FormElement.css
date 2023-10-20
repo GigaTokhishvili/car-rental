@@ -1,0 +1,25 @@
+.label-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.select {
+    border: 1px solid #ccd7e6;
+    border-radius: 3px;
+    color: #ababab;
+    font-family: Rubik,sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    outline: none;
+    padding: 1.2rem 1.3rem;
+    
+}
+
+.select option {
+    font-weight: normal;
+    display: block;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}

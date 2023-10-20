@@ -1,6 +1,7 @@
 import './Header.css';
 import NavLi from './NavLi';
 import navLogo from '../assets/nav-logo.png'
+import { nanoid } from 'nanoid';
 
 const NAVNAME = [
     'Home', 'About', 'Vehicle Models', 'Testimonials', 'Our Team', 'Contact'
@@ -17,7 +18,7 @@ function Header(props) {
                 <ul>
                     {NAVNAME.map((item) => {
                         return (
-                        <NavLi liName={item} />)
+                        <NavLi liName={item} key={nanoid()} />)
                     })}
                 </ul>
                 <div className="users">
