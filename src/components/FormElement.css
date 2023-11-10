@@ -12,14 +12,21 @@
     font-weight: 400;
     outline: none;
     padding: 1.2rem 1.3rem;
-    
+    cursor: pointer;
 }
 
 .select option {
     font-weight: normal;
     display: block;
-    white-space-collapse: collapse;
-    text-wrap: nowrap;
     min-height: 1.2em;
     padding: 0px 2px 1px;
+    color: #ababab;
+    font-family: Rubik,sans-serif;
+    font-size: 1.5rem;
+}
+
+.book-label {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1em 0 0.8em ;
 }

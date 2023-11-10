@@ -7,6 +7,10 @@ a {
     transition: all .3s;
 }
 
-a:hover {
+nav li a:hover {
+    color: #ff4d30;
+}
+
+.red-color {
     color: #ff4d30;
 }

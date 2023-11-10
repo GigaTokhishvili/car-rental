@@ -1,0 +1,45 @@
+.our-team {
+    display: flex;
+    padding: 10rem 0;
+    text-align: center;
+    width: 110rem;
+    gap: 3rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.our-team-box {
+    border-radius: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    width: 33rem;
+    background-color: #fff;
+    box-shadow: 0 20px 10px 0 rgba(0,0,0,.08);
+}
+
+.our-team-box img {
+    height: 32rem;
+    width: 100%;
+}
+
+.our-box-bottom {
+    color: #010103;
+    padding: 3rem
+}
+
+.our-box-bottom p{
+    margin: 0;
+}
+
+.our-box-bottom h4 {
+    margin: 0;
+}
+
+@media (max-width: 1050px) {
+    .our-team {
+        flex-direction: column;
+        width: 100%;
+
+    }
+}

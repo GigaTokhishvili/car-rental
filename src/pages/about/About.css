@@ -1,0 +1,194 @@
+.about-main {
+    padding: 6rem 15rem 0 ;
+    
+}
+
+.about-main h1 {
+    font-family: Rubik,sans-serif;
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about-main img {
+    height: 43rem;
+    width: 43rem;
+    margin-right: 5rem;
+}
+
+.about-main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50rem;
+    
+}
+
+.about-main-text h3 {
+    font-size: 4.2rem;
+    line-height: 1.2;
+    width: 55rem ;
+}
+
+.about-main-text p {
+    color: #706f7b;
+    font-family: Rubik,sans-serif;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.about-main-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2.5rem 0;
+    width: 100rem;
+}
+
+.about-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.about-h {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-h div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #706f7b;
+    font-family: Rubik,sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 0 1.3rem;
+    gap: 1.6rem;
+}
+
+.about-h span {
+    font-size: 4.6rem;
+    color: black;
+}
+
+.about-h:nth-child(1)::before {
+    content: '';
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../../assets/about-small-car.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.about-h:nth-child(2)::before {
+    content: '';
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../../assets/about-small-town.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.about-h:nth-child(3)::before {
+    content: '';
+    width: 6rem;
+    height: 6rem;
+    background-image: url(../../assets/about-small-garage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.about-book {
+    background-image: url(../../assets/about-book.png);
+    display: flex;
+    height: 20rem;
+    margin-top: 7rem;
+    position: relative;
+    width: 100%;
+}
+
+.about-bg {
+    background-color: #2d2d2d;
+    height: 100%;
+    opacity: .89;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.about-book-text {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 20rem;
+}
+
+.about-book-text h3 {
+    font-size: 3.2rem;
+}
+
+.about-book-text span {
+    align-items: center;
+    color: #ff4d30;
+    display: flex;
+    font-size: 2.7rem;
+    gap: 1rem;
+    white-space: nowrap;
+}
+
+@media (max-width: 1050px) {
+    .about-main {
+        padding: 0;
+    }
+
+    .about-main h1 {
+        margin-top: 4rem;
+    }
+
+    .about-main-child {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .about-main-child img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about-main-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-main-text h3 {
+        width: 100%;
+    }
+
+    .about-icons {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .about-h div {
+        flex-direction: column;
+    }
+
+    .about-book-text {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+}

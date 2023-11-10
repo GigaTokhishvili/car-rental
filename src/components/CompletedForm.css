@@ -1,0 +1,249 @@
+.completed-form {
+    width: 50%;
+    height: 94vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 3vh;
+    left: 20%;
+    z-index: 999;
+    background-color:white;
+    padding: 0.5em;
+    overflow-y: scroll;
+
+}
+
+.completed-form-header {
+    width: 100%;
+    display: flex;
+    background-color: #ff4d30;
+    justify-content: space-between;
+    padding: 1.3em ;
+}
+
+.completed-form-header h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.completed-form-header svg {
+    height: 2.5em;
+    fill: white;   
+    cursor: pointer;
+}
+
+.completed-form-warning {
+    width: 100%;
+    background-color: #ffeae6;
+    padding: 1.3em;
+    gap: 1em;
+}
+
+.completed-form-warning div {
+    display: flex;
+    gap: 1em;
+}
+
+.completed-form-warning h3 {
+    font-size: 1.9em;
+}
+
+.completed-form-warning svg {
+    height: 2em;
+    fill: #ff4d30;   
+}
+
+.completed-form-warning p {
+    font-size: 1.7em;
+    margin: 1.6em 0;
+}
+
+.completed-form-data {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding:  3rem;
+    border-bottom: 1px solid hsla(0,0%,47%,.624);
+}
+
+.info-car  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:baseline
+}
+
+.info-car-header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.info-car-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.info-car-header p {
+    color: #777;
+    font-size: 1.6rem;
+}
+
+.info-car h5 {
+    font-size: 1.8rem;
+    color: #ff4d30;
+}
+
+.info-car {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-self: flex-end;
+}
+
+.info-car-header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.car-text {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    color: black;
+}
+
+.info-car-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.car-mark {
+     color: #ff4d30;
+}
+
+.car-img {
+    height: auto;
+    width: 100%;
+}
+
+.comp-form-info-data {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1.6rem 0;
+
+}
+
+.comp-form {
+    width: 100%;
+    padding: 3em;
+}
+
+.comp-form h2 {
+    color: #ff4d30;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    padding-left: .5em;
+    text-transform: uppercase;
+}
+
+.comp-form-info-2row {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    gap: 1rem;
+}
+
+
+.comp-form-info-2row label {
+    color: #777;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.comp-form-info-1row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+    padding: 1.5rem 0;
+}
+
+.comp-form-info-1row input{
+    background-color: #dbdbdb;
+    border: none;
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    padding: 14px 15px;
+}
+
+.comp-form-info-1row input{
+    background-color: #dbdbdb;
+    border: none;
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    padding: 14px 15px;
+}
+
+.comp-form-info-1row label {
+    color: #777;
+    font-size: 1.6rem;
+    font-weight: 500;
+    
+}
+
+
+.comp-form-info-2row input{
+    background-color: #dbdbdb;
+    border: none;
+    color: #555;
+    font-size: 1.5rem;
+    font-weight: 500;
+    outline: none;
+    padding: 14px 15px;
+}
+
+
+
+.some-data-info {
+    align-items: center;
+    color: #565454;
+    display: flex;
+    font-size: 1.6rem;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+}
+
+.some-data-info p{
+    color: #565454;
+    display: flex;
+    font-size: 1.6rem;
+}
+
+.reserve {
+    background-color: #dbdbdb;
+    margin: 0 -3rem;
+    padding: 3rem;
+    text-align: right;
+}
+
+.reserve button {
+    background-color: #ff4d30;
+    border: 1px solid #ff0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1.2rem 2rem;
+    transition: all .2s;
+}
