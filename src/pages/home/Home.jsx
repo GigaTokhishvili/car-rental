@@ -226,9 +226,11 @@ function ParentSection(props) {
                     <div className='car-img' >
                         <div className='car-img-parent'>
                         {FORMLABEL[0].carImgs.map((item) => {
+                            let carSrc = item.split('-')
+                            console.log(carSrc[0])
                             return(
                                 <div key={nanoid()}>
-                                {item === `/src/assets/${carInfo.split(' ').join('')}.jpg` && <img src={item} alt="" />}
+                                {carSrc[0] === `/src/assets/${carInfo.split(' ').join('')}` && <img src={item} alt="" />}
                                 </div>
                             )
                         })}
