@@ -11,7 +11,12 @@ import HomeDownload from '../../components/HomeDownload';
 import HomeFaq from '../../components/HomeFaq';
 import HomeChoice from '../../components/HomeChoice';
 import HomeBanner from '../../components/HomeBanner';
-// import HomeBook from '../../components/HomeBook';
+import AudiA1SLine from '../../assets/AudiA1SLine.jpg'
+import VWGolf6 from '../../assets/VWGolf6.jpg'
+import ToyotaCamry from '../../assets/ToyotaCamry.jpg'
+import BMW320ModernLine from '../../assets/BMW320ModernLine.jpg'
+import MercedesBenzGLK from '../../assets/MercedesBenzGLK.jpg'
+import VWPassatCC from '../../assets/VWPassatCC.jpg'
 
 
 
@@ -22,7 +27,7 @@ const FORMLABEL = [
     htmlSelect: 'carType',
     icon: 'fa-solid fa-car-side',
     options: ['Select your car', 'Audi A1 S Line', 'VW Golf 6', 'Toyota Camry', 'BMW 320 ModernLine', 'Mercedes Benz GLK', 'VW Passat CC'],
-    gasuriGasi: 'gio',
+    carImgs: [ AudiA1SLine, VWGolf6, ToyotaCamry, BMW320ModernLine, MercedesBenzGLK, VWPassatCC ],
     },
 
     {labelName: 'Pick Up City',
@@ -53,6 +58,7 @@ const FORMLABEL = [
     options: []
     },
 ]
+
 
 const CARINFO = [
     {carName: 'AudiA1SLine',
@@ -147,6 +153,7 @@ function ParentSection(props) {
         }
     }, [])
 
+
     return(
         <>
             {scrollDistance >= 700 && <div onClick={() => scrollTo({top: 0, behavior: 'smooth'})} className='scroll-up'>
@@ -218,7 +225,13 @@ function ParentSection(props) {
                     </div>
                     <div className='car-img' >
                         <div className='car-img-parent'>
-                        <img src={`src/assets/${carInfo.split(' ').join('')}.jpg`} alt="" />
+                        {FORMLABEL[0].carImgs.map((item) => {
+                            return(
+                                <div key={nanoid()}>
+                                {item === `/src/assets/${carInfo.split(' ').join('')}.jpg` && <img src={item} alt="" />}
+                                </div>
+                            )
+                        })}
                         </div>
                         <div className='car-info'>
                             <div className='main-car-data'>

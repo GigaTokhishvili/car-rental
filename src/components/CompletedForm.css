@@ -247,3 +247,36 @@
     padding: 1.2rem 2rem;
     transition: all .2s;
 }
+
+@media (max-width: 1050px) {
+    .completed-form {
+        width: 95vw;
+        margin: 0 auto;
+        left: 2.5vw;
+        top: 0;
+        border-radius: 1rem;
+        height: 100vh;
+    }
+
+    .completed-form-data {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-car-header h1, .info-car-header p {
+        font-size: large;
+    }
+
+    .info-car{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-car-header {
+        display: flex;
+        justify-content: center;
+    }
+}

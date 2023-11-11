@@ -4,40 +4,54 @@ import TopBanner from '../../components/TopBanner'
 import Book from '../../components/Book'
 import Team from '../../components/Team'
 import { nanoid } from 'nanoid'
+import Simba from '../../assets/simba.jpg'
+import Baloo from '../../assets/baloo.jpg'
+import Genie from '../../assets/jinie.jpg'
+import Terk from '../../assets/terk.jpg'
+import Mickey from '../../assets/mickey.jpg'
+import Elsa from '../../assets/elsa.jpg'
 
 
 const OURTEAM = [
   {name: 'Simba',
-  position: 'CEO'
+  position: 'CEO',
+  member: Simba,
   },
   {name: 'Baloo',
-  position: 'Director'
+  position: 'Director',
+  member: Baloo,
+
   },
-  {name: 'Jinie',
-  position: 'Photographer'
+  {name: 'Genie',
+  position: 'Photographer',
+  member: Genie,
   },
   {name: 'Terk',
-  position: 'Car Detailist'
-  },
+  position: 'Car Detailist',
+  member: Terk,
+  },    
   {name: 'Mickey',
-  position: 'Mechanic'
+  position: 'Mechanic',
+  member: Mickey,
   },
   {name: 'Elsa',
-  position: 'Manager'
+  position: 'Manager',
+  member: Elsa,
   }
 ]
 
-function OurTeam(props) {
+function OurTeam() {
   return (
     <>
       <TopBanner pageName={'Our Team'} />
       <div className='our-team container'>
-        {OURTEAM.map((item) =>{
+        {OURTEAM.map(({ name, position, member }) =>{
           return (
             <div className='our-team-box ' key={nanoid()}>
             <Team
-            name={item.name}
-            position={item.position}
+            name={name}
+            position={position}
+            member={member}
             />
             </div>
             )

@@ -7,7 +7,7 @@ function Models(props) {
   return (
     <div className='vehicle' key={nanoid()}>
         <div className='img-div'>
-        <img  key={nanoid()} src={`src/assets/${props.carName.split(' ').join('').toLowerCase()}.png`} alt="" />
+        <img  key={nanoid()} src={props.carImg} alt="" />
         </div>
         <div className="vehicles-box-main" key={nanoid()}>
             <div className='vehicles-box-car'>

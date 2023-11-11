@@ -2,15 +2,15 @@ import React from 'react'
 import './Team.css'
 
 
-function Team(props) {
+function Team({ member, name, position }) {
   return (
     <>
         <img 
-        src={`src/assets/${props.name.toLowerCase()}.jpg`} 
+        src={member} 
         alt="team member image" />
         <div className="our-box-bottom">
-            <h4>{props.name}</h4>
-            <p>{props.position}</p>
+            <h4>{name}</h4>
+            <p>{position}</p>
         </div>
     </>
   )
