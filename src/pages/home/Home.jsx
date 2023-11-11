@@ -230,7 +230,7 @@ function ParentSection(props) {
                             console.log(carSrc[0])
                             return(
                                 <div key={nanoid()}>
-                                {carSrc[0] === `/src/assets/${carInfo.split(' ').join('')}` && <img src={item} alt="" />}
+                                {carSrc[0] === `/assets/${carInfo.split(' ').join('')}` && <img src={item} alt="" />}
                                 </div>
                             )
                         })}
