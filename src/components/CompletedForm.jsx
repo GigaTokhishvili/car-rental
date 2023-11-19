@@ -60,9 +60,10 @@ export default function CompletedForm(props) {
                                     </div>
                                         {COMPIMGS.map((carItem) => {
                                             const carSrc = carItem.split('-');
+                                            console.log(`/src/assets/${props.values[0].value.split(' ').join('')}`, carSrc[0])
                                             return (
                                                 <div  key={nanoid()}>
-                                                {`/assets/${props.values[0].value.split(' ').join('')}` === carSrc && <img className='car-img' src={carItem} alt="" />}
+                                                {`/src/assets/${props.values[0].value.split(' ').join('')}` === carSrc[0] && <img className='car-img' src={carItem} alt="" />}
                                                 </div>
                                             )
                                         })}
