@@ -68,17 +68,17 @@ const CARINFO = [
     }, 
     {carName: 'VWPassatCC',
     carInfo: ['Model', 'Mark', 'Year', 'Doors', 'AC', 'Transmission', 'Fuel'],
-    carData: ['Golf 6', 'Volkswagen', '2008', '4/5', 'Yes', 'Manual', 'Diesel'],
+    carData: ['Passat CC', 'Volkswagen', '2008', '4/5', 'Yes', 'Automatic', 'Gasoline'],  
     price: '$37'          
     },
     {carName: 'VWGolf6',
     carInfo: ['Model', 'Mark', 'Year', 'Doors', 'AC', 'Transmission', 'Fuel'],
-    carData: ['Camry', 'Toyota', '2006', '4/5', 'Yes', 'Automatic', 'Hybrid'],
+    carData: ['Golf 6', 'Volkswagen', '2008', '4/5', 'Yes', 'Manual', 'Diesel'],
     price: '$30'
     }, 
     {carName:'ToyotaCamry',
     carInfo: ['Model', 'Mark', 'Year', 'Doors', 'AC', 'Transmission', 'Fuel'],
-    carData: ['320', 'BMW', '2012', '4/5', 'Yes', 'Manual', 'Diesel'],          
+    carData: ['Camry', 'Toyota', '2006', '4/5', 'Yes', 'Automatic', 'Hybrid'],
     price: '$35'
     },
     {carName: 'MercedesBenzGLK',
@@ -88,7 +88,7 @@ const CARINFO = [
     },
     {carName: 'BMW320ModernLine',
     carInfo: ['Model', 'Mark', 'Year', 'Doors', 'AC', 'Transmission', 'Fuel'],
-    carData: ['Passat CC', 'Volkswagen', '2008', '4/5', 'Yes', 'Automatic', 'Gasoline'],          
+    carData: ['320', 'BMW', '2012', '4/5', 'Yes', 'Manual', 'Diesel'],        
     price: '$25'
     }
 ]
@@ -193,13 +193,14 @@ function ParentSection(props) {
             </section>
 
             {/* book form's completed form */}
-            {showDiv && <CompletedForm closeBtn={() => setShowDiv(false)}
+            {showDiv && <CompletedForm 
+                closeBtn={() => setShowDiv(false)}
                 showNotice={() => {
                     setCompNotice(true); 
                     setFormError(false);
                 }}
-                values={values}           
-            />}   
+                values={values}
+            />} 
 
             <AddInfo />
 
@@ -229,7 +230,7 @@ function ParentSection(props) {
                             let carSrc = item.split('-')
                             return(
                                 <div key={nanoid()}>
-                                {carSrc[0] === `/assets/${carInfo.split(' ').join('')}` && <img src={item} alt="" />}
+                                    {carSrc[0] === `/assets/${carInfo.split(' ').join('')}` && <img src={item} alt="" />}
                                 </div>
                             )
                         })}

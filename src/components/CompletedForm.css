@@ -1,17 +1,23 @@
+.completed-section {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
 .completed-form {
     width: 50%;
     height: 94vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: fixed;
-    top: 3vh;
-    left: 20%;
-    z-index: 999;
     background-color:white;
     padding: 0.5em;
     overflow-y: scroll;
-
 }
 
 .completed-form-header {
