@@ -18,6 +18,7 @@
     background-color:white;
     padding: 0.5em;
     overflow-y: scroll;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .completed-form-header {
